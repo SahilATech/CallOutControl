@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="sa" constructor="CallOutControl" version="0.0.1" display-name-key="CallOutControl" description-key="CallOutControl description" control-type="virtual" >
+  
+    <external-service-usage enabled="false">
+    </external-service-usage>
+
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    
+    <property name="titleText" display-name-key="Title" description-key="Title Text" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="descriptionText" display-name-key="Description" description-key="Description Text" of-type="Multiple" usage="input" required="false" />
+    
+    <property name="linkText" display-name-key="Link Text" description-key="Link Text" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="linkUrl" display-name-key="Link Url" description-key="Link Url" of-type="SingleLine.URL" usage="input" required="false" />
+    
+    <property name="hideCalloutBtnText" display-name-key="HideCallout Button Name" description-key="HideCallout Button Name" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="showCalloutBtnText" display-name-key="ShowCallout Button Name" description-key="ShowCallout Button Name" of-type="SingleLine.Text" usage="input" required="true" />
+    
+    <property name="onLoadMessageVisible" display-name-key="Default Message Visible" description-key="Message Visible on Onload of control" of-type="TwoOptions" usage="input" required="true" />
+    
+    <property name="buttonMessageGap" display-name-key="Callout Button Message Gap" description-key="Gap between Callout Button and Message" of-type="Whole.None" usage="input" required="false" />
+    <property name="buttonGap" display-name-key="Buttons Gap" description-key="Buttons Gap" of-type="Whole.None" usage="input" required="false" />
+    
+    <property name="beakWidth" display-name-key="Beak Width" description-key="Beak Width" of-type="Whole.None" usage="input" required="false" />
+    
+    <property name="doubleButtonsDoneLabel" display-name-key="Done Label (Two Buttons)" description-key="Done Label (Two Buttons)" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="doubleButtonsCancelLabel" display-name-key="Cancel Button Label (Two Buttons)" description-key="Cancel Button Label (Two Buttons)" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="singleButtonActionLabel" display-name-key="Button Label (Single Button)" description-key="Button Label (Single Button)" of-type="SingleLine.Text" usage="input" required="false" />
+
+    <property name="directionalHint" display-name-key="Directional Message" description-key="Choose the directional hint for the callout" of-type="Enum" usage="input" required="false" default-value="0">
+      <value name="Top Left Edge" display-name-key="Top Left Edge" description-key="Position at the top left edge.">0</value>
+      <value name="Top Center" display-name-key="Top Center" description-key="Position at the top center.">1</value>
+      <value name="Top Right Edge" display-name-key="Top Right Edge" description-key="Position at the top right edge.">2</value>
+      <value name="Top Auto Edge" display-name-key="Top Auto Edge" description-key="Position at the top auto edge.">3</value>
+      <value name="Bottom Left Edge" display-name-key="Bottom Left Edge" description-key="Position at the bottom left edge.">4</value>
+      <value name="Bottom Center" display-name-key="Bottom Center" description-key="Position at the bottom center.">5</value>
+      <value name="Bottom Right Edge" display-name-key="Bottom Right Edge" description-key="Position at the bottom right edge.">6</value>
+      <value name="Bottom Auto Edge" display-name-key="Bottom Auto Edge" description-key="Position at the bottom auto edge.">7</value>
+      <value name="Left Top Edge" display-name-key="Left Top Edge" description-key="Position at the left top edge.">8</value>
+      <value name="Left Center" display-name-key="Left Center" description-key="Position at the left center.">9</value>
+      <value name="Left Bottom Edge" display-name-key="Left Bottom Edge" description-key="Position at the left bottom edge.">10</value>
+      <value name="Right Top Edge" display-name-key="Right Top Edge" description-key="Position at the right top edge.">11</value>
+      <value name="Right Center" display-name-key="Right Center" description-key="Position at the right center.">12</value>
+      <value name="Right Bottom Edge" display-name-key="Right Bottom Edge" description-key="Position at the right bottom edge.">13</value>
+    </property>
+
+    <property name="twoButtonsOrSingleButton" display-name-key="Buttons" description-key="Buttons" of-type="Enum" usage="input" required="false" default-value="0">
+        <value name="No Button" display-name-key="No Button" description-key="No button">0</value>
+        <value name="Single Button" display-name-key="Single Button" description-key="Single button.">1</value>
+        <value name="Two Buttons" display-name-key="Two Buttons" description-key="Two buttons.">2</value>
+    </property>
+
+
+    <property name="hideOnOutsideClick" display-name-key="Hide On Outside Click" description-key="Hide On Outside Click" of-type="TwoOptions" usage="input" required="false" />
+
+    <resources>
+
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.8.6" />
+      <platform-library name="Fluent" version="8.29.0" />
+
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <css path="css/CallOutControl.css" order="1" />
+      <resx path="strings/CallOutControl.1033.resx" version="1.0.0" />
+      -->
+
+    </resources>
+  </control>
+</manifest>
