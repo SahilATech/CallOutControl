@@ -1,18 +1,16 @@
 # PCF-CalloutControl
 
-**PCF-CalloutControl** is a custom control designed for use with PowerApps Component Framework (PCF). This versatile control offers customizable callouts with various features and settings to enhance user interactions within your application..
+**PCF-CalloutControl** is a custom control designed with PowerApps Component Framework (PCF). This versatile control offers customizable callouts with various features and settings to enhance user interactions within your application.
 
 [Managed Solution](https://github.com/SahilATech/CallOutControl/raw/b353bb367c4f985bc26b3bd788c8dc545509318b/Solutions/solution_managed.zip)
 
 ## Features
 
-- **Customizable Callout** : Display dynamic messages and actions in a callout dialog.
+- **Customizable Callout**: Display dynamic messages and actions in a callout dialog.
 - **Flexible Button Configuration**: Control the number of buttons and their labels.
 - **Directional Hint**: Position the callout in various directions relative to the target.
 - **Hide on Outside Click**: Optionally close the callout when clicking outside.
 - **Gap and Width Settings:** Configure visual spacing and size for the callout and its components.
-
-## Key Properties
 
 ## Key Properties
 
